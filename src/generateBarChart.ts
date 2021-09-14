@@ -7,7 +7,7 @@ export default function generateBarChart(percent: number, size: number) {
   const frac = Math.floor((size * 8 * percent) / 100);
   const barsFull = Math.floor(frac / 8);
   if (barsFull >= size) {
-    return syms.substring(7, 8).repeat(size);
+    return syms.substring(8, 9).repeat(size);
   }
   const semi = frac % 8;
 
