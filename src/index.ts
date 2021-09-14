@@ -84,8 +84,8 @@ interface IRepo {
     const line = [
       `${cur.label}`.padEnd(10),
       `${cur.commits.toString().padStart(5)} commits`.padEnd(14),
-      generateBarChart(percent, 19),
-      String(percent.toFixed(1)).padStart(5) + '%',
+      generateBarChart(percent, 18),
+      String(percent.toFixed(1)).padStart(3) + '%',
     ];
 
     return [...prev, line.join(' ')];
